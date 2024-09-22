@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #333); /* Define o fundo como preto */
+    display: flex;
+    color: white; /* Altera a cor do texto para branco para maior contraste */
+    flex-direction: column; /* Alinha tudo em coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    border: 1px solid black;
+    text-align: center;
+    max-width: 800px; /* Define um limite máximo de largura */
+    margin-left: auto; /* Centraliza o elemento horizontalmente */
+    margin-right: auto; /* Centraliza o elemento horizontalmente */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    }
+    
+
+header {
+    background: linear-gradient(to bottom, #000000, #333); 
+    color: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex; /* Torna o nav um contêiner flexível */
+    justify-content: center; /* Centraliza os itens no nav */
+    padding: 0;
+}
+
+nav ul {
+    display: flex; /* Torna a lista um contêiner flexível */
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: gold; /* Mudança de cor no hover */
+}
+
+main {
+    flex: 1; /* Permite que o main cresça e ocupe o espaço restante */
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #989898;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Empilha os itens em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+}
+
+#SoftSkills {
+    list-style-position: inside; 
+    text-align: center;  
+}
+
+i.bi-github, i.bi-linkedin {
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+i.bi-github {
+    color: #333;
+}
+
+i.bi-github:hover {
+    color: #000;
+}
+
+i.bi-linkedin {
+    color: #0077b5;
+}
+
+i.bi-linkedin:hover {
+    color: #005582;
+}
+
+#experiencia {
+    margin: 20px 0;
+    border: 1px solid #333;
+    text-align: center;
+    max-width: 800px; /* Define um limite máximo de largura */
+    margin-left: auto; /* Centraliza o elemento horizontalmente */
+    margin-right: auto; /* Centraliza o elemento horizontalmente */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+}
+
+
+
+
+  
