@@ -1,117 +1,130 @@
+/* Estiliza o elemento html para ter um comportamento de rolagem suave */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Facilita a rolagem entre seções da página */
 }
 
+/* Define o estilo básico do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background: linear-gradient(to bottom, #000000, #333); /* Define o fundo como preto */
-    display: flex;
-    color: white; /* Altera a cor do texto para branco para maior contraste */
-    flex-direction: column; /* Alinha tudo em coluna */
-    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
-    border: 1px solid black;
-    text-align: center;
-    max-width: 800px; /* Define um limite máximo de largura */
-    margin-left: auto; /* Centraliza o elemento horizontalmente */
-    margin-right: auto; /* Centraliza o elemento horizontalmente */
-    padding: 20px; /* Adiciona um pouco de espaçamento interno */
-    }
-    
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    margin: 0; /* Remove margens padrão do browser */
+    background: linear-gradient(to bottom, #000000, #333); /* Cria um fundo gradiente do preto ao cinza escuro */
+    display: flex; /* Usa flexbox para organizar elementos filhos */
+    color: white; /* Define a cor do texto como branca para contraste */
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    border: 1px solid black; /* Adiciona uma borda preta ao redor do corpo */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define uma largura máxima para o corpo */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
 
+/* Estilo do cabeçalho */
 header {
-    background: linear-gradient(to bottom, #000000, #333); 
-    color: gold;
-    padding: 20px;
-    text-align: center;
+    background: linear-gradient(to bottom, #000000, #333); /* Fundo gradiente igual ao do body */
+    color: gold; /* Cor do texto do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo do menu de navegação */
 nav {
-    display: flex; 
-    justify-content: center; /* Centraliza os itens no nav */
-    padding: 0;
+    display: flex; /* Usa flexbox para organizar os itens do nav */
+    justify-content: center; /* Centraliza os itens dentro do nav */
+    padding: 0; /* Remove espaçamento interno */
 }
 
+/* Estilo da lista de navegação */
 nav ul {
-    display: flex; 
-    padding: 0;
-    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    padding: 0; /* Remove espaçamento interno */
+    list-style: none; /* Remove marcadores de lista */
 }
 
+/* Estilo dos itens da lista de navegação */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
 }
 
+/* Estilo dos links de navegação */
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
 }
 
+/* Efeito de hover para links */
 nav a:hover {
-    color: gold; /* Mudança de cor no hover */
+    color: gold; /* Muda a cor ao passar o mouse */
 }
 
+/* Estilo principal */
 main {
-    flex: 1; /* Permite que o main cresça e ocupe o espaço restante */
-    padding: 20px;
+    flex: 1; /* Permite que o main ocupe o espaço restante disponível */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
 
+/* Estilo das seções */
 section {
-    margin: 20px 0;
-    border: 1px solid black;
-    text-align: center;
-    
+    margin: 20px 0; /* Espaçamento vertical entre seções */
+    border: 1px solid black; /* Borda ao redor das seções */
+    text-align: center; /* Centraliza o texto dentro das seções */
 }
 
+/* Estilo do rodapé */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #989898;
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 20px; /* Espaçamento interno */
+    background: #989898; /* Cor de fundo do rodapé */
 }
 
+/* Estilos responsivos para telas menores */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column; /* Empilha os itens em telas menores */
-        align-items: center;
+        align-items: center; /* Centraliza os itens na coluna */
     }
 }
 
+/* Estilo específico para uma lista de habilidades */
 #SoftSkills {
-    list-style-position: inside; 
-    text-align: center;  
+    list-style-position: inside; /* Coloca marcadores dentro do conteúdo */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para ícones de redes sociais */
 i.bi-github, i.bi-linkedin {
-    font-size: 40px;
-    transition: color 0.3s ease;
+    font-size: 40px; /* Define um tamanho fixo para os ícones */
+    transition: color 0.3s ease; /* Transição suave para a cor ao passar o mouse */
 }
 
 i.bi-github {
-    color: #333;
+    color: #333; /* Cor do ícone do GitHub */
 }
 
 i.bi-github:hover {
-    color: #000;
+    color: #000; /* Muda a cor ao passar o mouse */
 }
 
 i.bi-linkedin {
-    color: #0077b5;
+    color: #0077b5; /* Cor do ícone do LinkedIn */
 }
 
 i.bi-linkedin:hover {
-    color: #005582;
+    color: #005582; /* Muda a cor ao passar o mouse */
 }
 
+/* Estilo específico para a seção de experiência */
 #experiencia {
-    margin: 20px 0;
-    border: 1px solid #333;
-    text-align: center;
-    max-width: 800px; /* Define um limite máximo de largura */
-    margin-left: auto; /* Centraliza o elemento horizontalmente */
-    margin-right: auto; /* Centraliza o elemento horizontalmente */
-    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    margin: 20px 0; /* Espaçamento vertical */
+    border: 1px solid #333; /* Borda ao redor da seção */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define uma largura máxima */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
 
 
