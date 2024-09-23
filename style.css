@@ -28,13 +28,13 @@ header {
 }
 
 nav {
-    display: flex; /* Torna o nav um contêiner flexível */
+    display: flex; 
     justify-content: center; /* Centraliza os itens no nav */
     padding: 0;
 }
 
 nav ul {
-    display: flex; /* Torna a lista um contêiner flexível */
+    display: flex; 
     padding: 0;
     list-style: none; /* Remove os marcadores da lista */
 }
@@ -74,7 +74,7 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column; /* Empilha os itens em telas menores */
-        align-items: center; /* Centraliza os itens na coluna */
+        align-items: center;
     }
 }
 
