@@ -76,7 +76,7 @@ section {
 /* Estilo do rodapé */
 footer {
     text-align: center; /* Centraliza o texto do rodapé */
-    padding: 80px; /* Espaçamento interno */
+    padding: 20px; /* Espaçamento interno */
     background: #989898; /* Cor de fundo do rodapé */
 }
 
